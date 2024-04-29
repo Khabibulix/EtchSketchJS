@@ -1,12 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 .grid-container {
     border: 3px solid black;
-    width: 960px;
+    width: 500px;
     height: 350px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.grid-container * {
-    flex:1;
-}
+/* .grid-container * {
+    flex: 1 1 auto;
+} */
+
