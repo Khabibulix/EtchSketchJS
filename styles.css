@@ -1,3 +1,12 @@
 .grid-container {
     border: 3px solid black;
+    width: 960px;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-container * {
+    flex:1;
 }

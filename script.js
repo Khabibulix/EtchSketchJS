@@ -2,10 +2,11 @@ let grid = document.querySelector(".grid-container");
 
 function createGridItem(grid){
     let element = document.createElement("div");
-    element.style.backgroundColor = "blue";
-    element.style.height = "20px";
-    element.style.width = "20px";
     grid.appendChild(element);
 }
 
-createGridItem(grid);
+for (let row = 1; row < 16; row++){
+    for(let col = 1; col < 16; col++){
+        createGridItem(grid);
+    }
+}
