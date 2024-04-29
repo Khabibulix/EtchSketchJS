@@ -19,10 +19,10 @@ for (let row = 0; row < NUMBER_OF_GRID_ELEMENTS; row++){
     }
 }
 
-// let gridItems = document.querySelectorAll(".grid-container *");
+let gridItems = document.querySelectorAll(".grid-container *");
 
-// gridItems.forEach(function(item) {
-//     item.addEventListener("mouseover", (event) => {
-//         event.currentTarget.style.backgroundColor = "black";
-//     });
-// });
+gridItems.forEach(function(item) {
+    item.addEventListener("mouseover", (event) => {
+        event.currentTarget.style.backgroundColor = "black";
+    });
+});
