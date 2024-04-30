@@ -7,7 +7,6 @@ const SIZE_FOR_GRID_ELEMENT = 100 / NUMBER_OF_GRID_ELEMENTS;
 function createGridItem(grid){
     let element = document.createElement("div");
     element.style.border = "1px solid black";
-    element.style.backgroundColor = "blue";
     element.style.width = SIZE_FOR_GRID_ELEMENT+"%";
     element.style.height = SIZE_FOR_GRID_ELEMENT+"%";
     grid.appendChild(element);
