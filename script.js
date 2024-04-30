@@ -20,9 +20,15 @@ function addingEventListenersToGridItems(){
     });
 }
 
+function clearingGridAfterGeneratingNewOne(){
+    grid.innerHTML = "";
+}
+
 resizeButton.addEventListener("click", () => {
     let number_of_grid_elements = prompt("Enter the new size of the grid");
     const SIZE_FOR_GRID_ELEMENT = 100 / number_of_grid_elements;
+
+    clearingGridAfterGeneratingNewOne();
     
     for (let row = 0; row < number_of_grid_elements; row++){
         for(let col = 0; col < number_of_grid_elements; col++){
